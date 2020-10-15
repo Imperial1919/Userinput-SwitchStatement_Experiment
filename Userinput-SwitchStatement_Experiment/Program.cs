@@ -10,8 +10,15 @@ namespace Userinput_SwitchStatement_Experiment
 
             string age = Console.ReadLine();
 
+            if (age == "I don't know" || age == "What")
+            {
+                Console.WriteLine("IMBECILE!, surely You know Your age, now get to typing!");
 
-            if (Int32.Parse(age) <= 5)
+            }
+
+
+
+            else if (Int32.Parse(age) <= 5)
             {
 
                 switch (Int32.Parse(age))
@@ -43,7 +50,7 @@ namespace Userinput_SwitchStatement_Experiment
 
 
 
-             else if (Int32.Parse(age) <= 12)
+            else if (Int32.Parse(age) <= 12)
             {
 
                 switch (Int32.Parse(age))
@@ -74,13 +81,26 @@ namespace Userinput_SwitchStatement_Experiment
                         Console.WriteLine("Welcome to Hell- Middle school youngster! This is also the last year you can be called a 'Child' Technically speaking!");
                         break;
 
-                    
-                
+
+
                 }
-                
+
 
 
             }
+
+            else if (Int32.Parse(age) > 12 && Int32.Parse(age) <= 18)
+            {
+                switch (Int32.Parse(age))
+                {
+
+                
+                case 13:
+                    Console.WriteLine("Oh lord, You have hit puberty, you are in the middle of middle school AND your voice is probably cracking, god help you.");
+                    break;
+                }
+            }
+
 
 
 
