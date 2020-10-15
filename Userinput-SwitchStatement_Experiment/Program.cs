@@ -10,9 +10,16 @@ namespace Userinput_SwitchStatement_Experiment
 
             string age = Console.ReadLine();
 
-            if (age == "I don't know" || age == "What")
+            if (age == "wut" || age == "wat" || age == "WAT")
             {
-                Console.WriteLine("IMBECILE!, surely You know Your age, now get to typing!");
+                switch(age)
+                {
+                    case "wut":
+                    case "wat":
+                    case "WAT":
+                        Console.WriteLine("SPEAK ENGLISH YOU UNEDUCATED INGRATE.");
+                        break;
+                }
 
             }
 
